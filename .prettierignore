@@ -12,3 +12,4 @@ images/
 # 第三方库
 vendor/
 .history/
+pnpm-lock.yaml

@@ -7,7 +7,7 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
 
 export default defineConfig([
-    globalIgnores(['dist']),
+    globalIgnores(['dist', 'node_modules', '.history', '.husky', '.vscode']),
     {
         files: ['**/*.{ts,tsx}'],
         extends: [
