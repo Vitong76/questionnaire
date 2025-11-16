@@ -1,5 +1,5 @@
 export default {
-    printWidth: 100, // 每行代码最大长度（超过自动换行）
+    printWidth: 240, // 每行代码最大长度（超过自动换行）
     tabWidth: 4, // 每个缩进级别的空格数
     useTabs: false, // 使用空格代替制表符
     semi: true, // 语句末尾添加分号
