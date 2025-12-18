@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import { Button, Typography } from 'antd';
 import styled from 'styled-components';
@@ -27,6 +27,8 @@ const Home: React.FC = () => {
     const clickHandler = () => {
         nav('/manage/list');
     };
+
+    useEffect(() => {}, []);
 
     return (
         <Container>

@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Result, Button } from 'antd';
+import { useNavigate } from 'react-router';
 
 const NotFound: React.FC = () => {
+    const nav = useNavigate();
+
     return (
-        <div>
-            <h1>404 Not Found</h1>
-        </div>
+        <Result
+            status="404"
+            title="404"
+            subTitle="抱歉，您访问的页面不存在。"
+            extra={
+                <Button
+                    type="primary"
+                    onClick={() => {
+                        nav('/manage/list');
+                    }}
+                >
+                    返回首页
+                </Button>
+            }
+        ></Result>
     );
 };
 
